@@ -1,0 +1,9 @@
+.NavBar {
+    position: relative;
+    text-align: center;
+    min-width: 5vmin;
+}
+
+.NavBarButton {
+    margin: 1% 5%;
+}
