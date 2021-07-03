@@ -4,7 +4,8 @@ import HomePage from './pages/home/HomePage';
 import { useMemo, useState } from 'react';
 import { UserContext } from './pages/info/UserContext';
 import Navbar from './pages/components/Navbar'
-
+import FixturesPage from './pages/fixures/FixturesPage';
+import LoginPage from './pages/login/LoginPage'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
         <UserContext.Provider value={userMemo}>
           <Navbar />
           <Route exact path='/' component={HomePage} />
+          <Route exact path='/fixtures' component={FixturesPage} />
+          <Route exact path='/login' component={LoginPage} />
         </UserContext.Provider>
       </BrowserRouter>
     </div>
