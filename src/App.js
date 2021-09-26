@@ -6,6 +6,8 @@ import { UserContext } from './pages/info/UserContext';
 import Navbar from './pages/components/Navbar'
 import FixturesPage from './pages/fixures/FixturesPage';
 import LoginPage from './pages/login/LoginPage'
+import ResultsPage from './pages/results/ResultsPage';
+import ProfilePage from './pages/profile/ProfilePage';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Navbar />
           <Route exact path='/' component={HomePage} />
           <Route exact path='/fixtures' component={FixturesPage} />
+          <Route exact path='/results' component={ResultsPage} />
+          <Route exact path='/profile' component={ProfilePage} />
           <Route exact path='/login' component={LoginPage} />
         </UserContext.Provider>
       </BrowserRouter>
